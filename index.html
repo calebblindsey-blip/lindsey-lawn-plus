@@ -154,6 +154,15 @@
       color: #A5D6A7;
     }
 
+    #rotating-city {
+      display: inline-block;
+      transition: opacity 0.4s ease;
+      color: #fff;
+    }
+    #rotating-city.fade-out {
+      opacity: 0;
+    }
+
     .hero-sub {
       color: rgba(255,255,255,0.85);
       font-size: 1.05rem;
@@ -614,7 +623,7 @@
 
   <!-- TOP BAR -->
   <div class="topbar fade-in">
-    Serving Gardendale, AL &amp; Surrounding Areas &nbsp;·&nbsp;
+    Serving Warrior, AL &amp; Surrounding Areas &nbsp;·&nbsp;
     <a href="tel:2053060980">Call or Text: 205-306-0980</a>
   </div>
 
@@ -628,7 +637,7 @@
       />
       <p class="hero-tagline fade-up delay-1">We want you to enjoy coming home</p>
       <h1 class="hero-headline fade-up delay-2">
-        Gardendale's Trusted<br /><span>Lawn Care</span><br />Free Quotes — Fast Service
+        <span id="rotating-city">Gardendale's</span> Trusted<br /><span>Lawn Care</span><br />Free Quotes — Fast Service
       </h1>
       <p class="hero-sub fade-up delay-3">
         Professional mowing, edging, mulching, and seasonal cleanups.<br />
@@ -655,7 +664,7 @@
           </svg>
         </div>
         <h3>Local &amp; Reliable</h3>
-        <p>Based right here in Gardendale. We show up on time, every time — no ghosting, no excuses.</p>
+        <p>Based right here in Warrior. We show up on time, every time — no ghosting, no excuses.</p>
       </div>
 
       <div class="why-card">
@@ -838,7 +847,7 @@
       class="footer-logo"
     />
     <div class="footer-phone"><a href="tel:2053060980">205-306-0980</a></div>
-    <div class="footer-area">Serving Gardendale, AL &amp; Surrounding Areas</div>
+    <div class="footer-area">Serving Warrior, AL &amp; Surrounding Areas</div>
     <div class="footer-copy">
       &copy; <span id="year"></span> Lindsey Lawn+. All rights reserved.
     </div>
@@ -857,6 +866,25 @@
   <script>
     // Set copyright year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Rotate city name in hero headline
+    (function() {
+      const cities = ["Gardendale's", "Fultondale's", "Warrior's", "Kimberly's", "Morris's", "Hayden's"];
+      let index = 0;
+      const el = document.getElementById('rotating-city');
+
+      setInterval(function() {
+        // Fade out
+        el.classList.add('fade-out');
+        setTimeout(function() {
+          // Swap text while invisible
+          index = (index + 1) % cities.length;
+          el.textContent = cities[index];
+          // Fade back in
+          el.classList.remove('fade-out');
+        }, 400); // matches CSS transition duration
+      }, 2500); // rotate every 2.5 seconds
+    })();
 
     // Form submit handler
     document.getElementById('quote-form').addEventListener('submit', function(e) {
