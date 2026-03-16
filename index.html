@@ -633,8 +633,72 @@
       .sticky-call { display: block; }
       body { padding-bottom: 64px; }
     }
+
+    /* ─── FAQ SECTION ─────────────────────────────────────── */
+    .faq-section {
+      padding: 64px 24px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .faq-grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .faq-item {
+      background: var(--green-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .faq-item:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+    .faq-item h3 {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--green-dark);
+      margin-bottom: 8px;
+    }
+    .faq-item p {
+      font-size: 0.92rem;
+      color: var(--grey);
+      line-height: 1.65;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      transition: background 0.2s, transform 0.2s;
+    }
+    .social-links a:hover {
+      background: rgba(255,255,255,0.25);
+      transform: translateY(-2px);
+    }
+    .social-links a svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
   </style>
 
+  <!-- TODO: Caleb — confirm business hours (currently set to Mon-Sat 7AM-6PM) -->
   <!-- Structured Data: LocalBusiness -->
   <script type="application/ld+json">
   {
@@ -683,7 +747,87 @@
       { "@type": "Person", "name": "Amber Lindsey" }
     ],
     "paymentAccepted": ["Venmo", "Zelle"],
-    "slogan": "Local. Reliable. Done Right."
+    "slogan": "Local. Reliable. Done Right.",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does lawn care cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pricing depends on your yard size, services needed, and mowing frequency. Most residential lawns in the Warrior area range from $35\u2013$75 per visit. We provide free, no-obligation quotes so you know exactly what to expect."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We serve Warrior, Gardendale, Fultondale, Kimberly, Morris, Hayden, Trafford, and surrounding communities in north Jefferson and southern Blount County, Alabama."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to sign a contract?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No contracts required. We earn your business every visit. You can cancel or pause service anytime \u2014 no fees, no hassle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get a free estimate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fill out the quote form on our website, call us at 205-306-0980, or send us a text. We\u2019ll get back to you within one business day with a clear, upfront price."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What services do you offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer lawn mowing, edging, trimming, mulching, seasonal cleanup, and leaf removal. We\u2019re also expanding into landscaping services soon."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment methods do you accept?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We accept Venmo and Zelle for easy, contactless payments. No cash or checks needed \u2014 just a quick digital transfer after service."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should I have my lawn mowed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "During the growing season (March through October in Alabama), most yards benefit from weekly or bi-weekly mowing. We\u2019ll recommend the best schedule based on your grass type and growth."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer seasonal cleanup services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! We provide spring cleanup to clear winter debris and prep your yard, and fall cleanup with full leaf removal to keep things looking great year-round."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -720,7 +864,7 @@
 
   <!-- WHY US -->
   <section class="why">
-    <p class="section-label">Why Lindsey Lawn+</p>
+    <p class="section-label">Why Lindsey Lawn Plus</p>
     <h2 class="section-title">Local. Reliable. Done Right.</h2>
     <div class="why-grid">
 
@@ -771,6 +915,46 @@
       <span class="service-pill">Leaf Removal</span>
     </div>
   </div>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <p class="section-label">Common Questions</p>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>How much does lawn care cost?</h3>
+        <p>Pricing depends on your yard size, services needed, and mowing frequency. Most residential lawns in the Warrior area range from $35–$75 per visit. We provide free, no-obligation quotes so you know exactly what to expect.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What areas do you serve?</h3>
+        <p>We serve Warrior, Gardendale, Fultondale, Kimberly, Morris, Hayden, Trafford, and surrounding communities in north Jefferson and southern Blount County, Alabama.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do I need to sign a contract?</h3>
+        <p>No contracts required. We earn your business every visit. You can cancel or pause service anytime — no fees, no hassle.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I get a free estimate?</h3>
+        <p>Fill out the quote form below, call us at 205-306-0980, or send us a text. We'll get back to you within one business day with a clear, upfront price.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What services do you offer?</h3>
+        <p>We offer lawn mowing, edging, trimming, mulching, seasonal cleanup, and leaf removal. We're also expanding into landscaping services soon.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What payment methods do you accept?</h3>
+        <p>We accept Venmo and Zelle for easy, contactless payments. No cash or checks needed — just a quick digital transfer after service.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How often should I have my lawn mowed?</h3>
+        <p>During the growing season (March through October in Alabama), most yards benefit from weekly or bi-weekly mowing. We'll recommend the best schedule based on your grass type and growth.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer seasonal cleanup services?</h3>
+        <p>Yes! We provide spring cleanup to clear winter debris and prep your yard, and fall cleanup with full leaf removal to keep things looking great year-round.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- QUOTE FORM -->
   <section class="form-section" id="quote">
@@ -852,8 +1036,12 @@
                 Medium ¼–½ acre
               </label>
               <label class="radio-item">
-                <input type="radio" name="size" value="Large (over 1/2 acre)" />
-                Large &gt; ½ acre
+                <input type="radio" name="size" value="Large (1/2–1 acre)" />
+                Large ½–1 acre
+              </label>
+              <label class="radio-item">
+                <input type="radio" name="size" value="Extra Large (1+ acres)" />
+                XL &gt; 1 acre
               </label>
             </div>
           </div>
@@ -896,7 +1084,7 @@
           </div>
           <h2>You're All Set!</h2>
           <p>
-            Thanks for reaching out to Lindsey Lawn+. We'll be in touch within
+            Thanks for reaching out to Lindsey Lawn Plus. We'll be in touch within
             <strong>1 business day</strong> with your free estimate.<br /><br />
             Need us sooner? Give us a call or send a text:
           </p>
@@ -916,8 +1104,18 @@
     />
     <div class="footer-phone"><a href="tel:2053060980">205-306-0980</a></div>
     <div class="footer-area">Serving Warrior, AL &amp; Surrounding Areas</div>
+    <!-- TODO: Replace # with actual Facebook page URL once created -->
+    <!-- TODO: Replace # with Google Business Profile review link once live -->
+    <div class="social-links">
+      <a href="#" aria-label="Facebook" title="Follow us on Facebook">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="#" aria-label="Google Reviews" title="Leave us a review on Google">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </a>
+    </div>
     <div class="footer-copy">
-      &copy; <span id="year"></span> Lindsey Lawn+. All rights reserved.
+      &copy; <span id="year"></span> Lindsey Lawn Plus. All rights reserved.
     </div>
   </footer>
 
