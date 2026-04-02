@@ -19,6 +19,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://lindseylawnplus.com/corner-al-lawn-care.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://lindseylawnplus.com/fultondale-al-lawn-care.html</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -72,4 +78,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://lindseylawnplus.com/corner-al-lawn-care/corner-al-lawn-care.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Service pages -->
+  <url><loc>https://lindseylawnplus.com/lawn-mowing-service/lawn-mowing-service.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lindseylawnplus.com/lawn-edging-service/lawn-edging-service.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lindseylawnplus.com/leaf-removal-service/leaf-removal-service.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lindseylawnplus.com/shrub-trimming-service/shrub-trimming-service.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lindseylawnplus.com/spring-cleanup/spring-cleanup.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lindseylawnplus.com/fall-cleanup/fall-cleanup.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lindseylawnplus.com/recurring-lawn-care/recurring-lawn-care.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- New city pages -->
+  <url><loc>https://lindseylawnplus.com/pinson-al-lawn-care/pinson-al-lawn-care.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lindseylawnplus.com/mount-olive-al-lawn-care/mount-olive-al-lawn-care.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lindseylawnplus.com/hanceville-al-lawn-care/hanceville-al-lawn-care.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Informational pages -->
+  <url><loc>https://lindseylawnplus.com/when-to-mow-lawn-alabama/when-to-mow-lawn-alabama.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lindseylawnplus.com/best-grass-types-north-alabama/best-grass-types-north-alabama.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lindseylawnplus.com/spring-lawn-care-checklist-alabama/spring-lawn-care-checklist-alabama.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lindseylawnplus.com/how-much-does-lawn-care-cost-alabama/how-much-does-lawn-care-cost-alabama.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Seasonal local pages -->
+  <url><loc>https://lindseylawnplus.com/spring-lawn-care-warrior-al/spring-lawn-care-warrior-al.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lindseylawnplus.com/fall-lawn-care-warrior-al/fall-lawn-care-warrior-al.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
