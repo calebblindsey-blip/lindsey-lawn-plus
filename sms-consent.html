@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%2322c55e'/><text y='.9em' font-size='60' x='50' text-anchor='middle' fill='white'>L</text></svg>">
+
+<title>SMS Consent &amp; Opt-Out | Lindsey Lawn Plus</title>
+<meta name="description" content="How Lindsey Lawn Plus uses text messages to communicate with customers — appointment reminders, on-the-way notifications, invoice alerts. Reply STOP to opt out at any time.">
+<link rel="canonical" href="https://lindseylawnplus.com/sms-consent.html">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="SMS Consent &amp; Opt-Out | Lindsey Lawn Plus">
+<meta property="og:description" content="How Lindsey Lawn Plus uses text messages to communicate with customers.">
+<meta property="og:url" content="https://lindseylawnplus.com/sms-consent.html">
+<meta property="og:image" content="https://lindseylawnplus.com/logo.png">
+<meta property="og:site_name" content="Lindsey Lawn Plus">
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: #222;
+    background: #f9f9f9;
+    line-height: 1.6;
+  }
+
+  :root {
+    --green: #2E7D32;
+    --dark-green: #1B5E20;
+    --light-bg: #e8f5e9;
+  }
+
+  h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; }
+
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .top-bar {
+    background: var(--dark-green);
+    color: #fff;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .top-bar a { color: #fff; font-weight: 700; }
+
+  .site-header {
+    background: #fff;
+    border-bottom: 3px solid var(--green);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .site-header img { height: 50px; }
+  .site-header nav a {
+    margin-left: 24px;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--dark-green);
+  }
+
+  .hero {
+    background: var(--green);
+    color: #fff;
+    text-align: center;
+    padding: 60px 24px 50px;
+  }
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .hero p {
+    font-size: 17px;
+    max-width: 640px;
+    margin: 0 auto;
+    opacity: 0.95;
+  }
+
+  .section {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+  .section h2 {
+    font-size: 26px;
+    color: var(--dark-green);
+    margin-bottom: 16px;
+  }
+  .section h3 {
+    font-size: 19px;
+    color: var(--dark-green);
+    margin-top: 22px;
+    margin-bottom: 8px;
+  }
+  .section p {
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
+  .section ul {
+    margin: 0 0 14px 22px;
+    font-size: 16px;
+  }
+  .section ul li { margin-bottom: 6px; }
+
+  .callout {
+    background: var(--light-bg);
+    border-left: 4px solid var(--green);
+    padding: 18px 20px;
+    margin: 18px 0;
+    border-radius: 4px;
+  }
+  .callout strong { color: var(--dark-green); }
+
+  .site-footer {
+    background: var(--dark-green);
+    color: #fff;
+    text-align: center;
+    padding: 28px 24px;
+    font-size: 14px;
+  }
+  .site-footer a { color: #fff; }
+
+  .mobile-call-bar {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .site-header nav a { margin-left: 14px; font-size: 13px; }
+    .hero h1 { font-size: 28px; }
+    .section { padding: 30px 18px; }
+    .mobile-call-bar {
+      display: block;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--green);
+      color: #fff;
+      text-align: center;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 700;
+      z-index: 99;
+    }
+    .mobile-call-bar a { color: #fff; }
+    body { padding-bottom: 60px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="https://lindseylawnplus.com/">
+    <img src="https://lindseylawnplus.com/logo.png" alt="Lindsey Lawn Plus - Lawn Care in North Jefferson County, AL">
+  </a>
+  <nav>
+    <a href="https://lindseylawnplus.com/">Home</a>
+    <a href="https://lindseylawnplus.com/#quote">Get a Quote</a>
+    <a href="tel:2053060980">205-306-0980</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>SMS Consent &amp; Opt-Out</h1>
+  <p>How we use text messages to keep you in the loop on your lawn service.</p>
+</section>
+
+<section class="section">
+  <h2>What we send</h2>
+  <p>If you're a Lindsey Lawn Plus customer, we send a small number of service-related text messages tied to your appointments and billing. These are transactional — not marketing or promotional.</p>
+  <ul>
+    <li><strong>Appointment reminder</strong> — the day before your scheduled service, so you know when to expect us.</li>
+    <li><strong>On-my-way</strong> — when our crew is heading to your property, so you don't get surprised.</li>
+    <li><strong>Job complete</strong> — a quick confirmation when we finish, in case you have questions.</li>
+    <li><strong>Invoice ready</strong> — when your bill is available to view and pay.</li>
+  </ul>
+  <p>That's it. We don't send sales pitches, special offers, or messages about anything other than your active service with us.</p>
+</section>
+
+<section class="section">
+  <h2>How you opt in</h2>
+  <p>You give us permission to text you when you become a customer. That happens one of three ways:</p>
+  <ul>
+    <li>You agree verbally during your initial quote or onboarding conversation.</li>
+    <li>You provide your phone number on our quote-request form and confirm you'd like service updates by text.</li>
+    <li>You sign a service agreement that includes consent to text-based notifications.</li>
+  </ul>
+  <p>Standard message and data rates from your wireless carrier may apply. Lindsey Lawn Plus does not charge for these messages — only your carrier might, depending on your plan.</p>
+</section>
+
+<section class="section">
+  <h2>How to opt out</h2>
+  <div class="callout">
+    <p><strong>Reply STOP</strong> to any text message you receive from us. That immediately removes you from all future text notifications. You'll get a single confirmation text and then nothing else.</p>
+  </div>
+  <p>You can also call or text <a href="tel:2053060980">205-306-0980</a> any time and ask us to stop, or email <a href="mailto:lindseylawnplus@gmail.com">lindseylawnplus@gmail.com</a> with "Stop texts" in the subject line. Opting out of texts does not cancel your service — it just changes how we communicate. We'll still reach you by phone or email.</p>
+  <p>If you ever want to opt back in after stopping, reply <strong>START</strong> to our number or let us know directly.</p>
+</section>
+
+<section class="section">
+  <h2>For help</h2>
+  <p>Reply <strong>HELP</strong> to any of our texts and you'll get a short message with our phone number and a reminder of how to reach us. You can also call <a href="tel:2053060980">205-306-0980</a> during business hours.</p>
+</section>
+
+<section class="section">
+  <h2>Privacy</h2>
+  <p>We use your phone number only to send the service-related messages described above. We do not sell, rent, or share customer phone numbers with third parties for marketing purposes. Messages are sent through Twilio, our SMS service provider, and are subject to their security and privacy practices.</p>
+  <p>Frequency varies based on your service schedule. A weekly customer might get four to six messages a month; a one-time customer might get two or three total.</p>
+</section>
+
+<section class="section">
+  <h2>Questions?</h2>
+  <p>Call or text <a href="tel:2053060980">205-306-0980</a>, or email <a href="mailto:lindseylawnplus@gmail.com">lindseylawnplus@gmail.com</a>. We're a small local business and a real person will get back to you.</p>
+  <p style="margin-top: 22px; font-size: 13px; color: #666;">Last updated: April 24, 2026.</p>
+</section>
+
+<footer class="site-footer">
+  <p><strong>Lindsey Lawn Plus</strong></p>
+  <p>Warrior, AL &amp; Surrounding Areas</p>
+  <p><a href="tel:2053060980">205-306-0980</a> &nbsp;|&nbsp; <a href="https://lindseylawnplus.com/">lindseylawnplus.com</a></p>
+  <p style="margin-top: 12px; font-size: 12px; opacity: 0.8;">&copy; 2026 Lindsey Lawn Plus. All rights reserved.</p>
+</footer>
+
+<div class="mobile-call-bar">
+  <a href="tel:2053060980">&#128222; Call 205-306-0980 for a Free Quote</a>
+</div>
+
+</body>
+</html>
